@@ -1,11 +1,12 @@
 .wrap {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  height: 100vh;
   & > article {
     flex: 1;
   }
 }
 .wrapper {
   margin: 0 auto;
+  max-width: 1200px;
 }

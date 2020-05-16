@@ -1,5 +1,5 @@
 const { src, dest, series, parallel, watch } = require('gulp'),
-      less = require('gulp-less'),
+      sass = require('gulp-sass'),
       cleanCSS = require('gulp-clean-css'),
       browserSync = require('browser-sync'),
       uglify = require('gulp-uglify'),
@@ -11,7 +11,7 @@ const { src, dest, series, parallel, watch } = require('gulp'),
 const path = {
   src: { // исходники
     html: 'www/*.html',
-    styles: 'www/assets/less/bundle.less',
+    styles: 'www/assets/sass/bundle.scss',
     css: 'www/css/',
     img: '',
     fonts: ''
@@ -26,7 +26,7 @@ const path = {
   watch: { // за изменением каких файлов мы хотим наблюдать
     html: 'www/**/*.html',
     js: 'www/assets/**/*.js',
-    styles: 'www/assets/**/*.less',
+    styles: 'www/assets/**/*.scss',
     img: '',
     fonts: ''
   },
@@ -38,8 +38,8 @@ function clean() {
 }
 
 function css() {
-  return src(path.src.styles) // Берем источник
-    .pipe(less()) // Преобразуем less в CSS посредством gulp-less
+  return src(path.src.styles, { allowEmpty: true }) // Берем источник
+    .pipe(sass()) // Преобразуем less в CSS посредством gulp-less
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie >= 9'], { cascade: true })) // Создаем префиксы
     .pipe(cleanCSS())
     .pipe(dest(path.src.css)) // Выгружаем результата в папку www/css

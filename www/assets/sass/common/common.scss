@@ -7,6 +7,6 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
-@import url('margins.less');
-@import url('paddings.less');
-@import url('media.less');
+@import 'margins.scss';
+@import 'paddings.scss';
+@import 'media.scss';
