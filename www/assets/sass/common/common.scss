@@ -3,10 +3,34 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #f5f5fa;
   color: #010101;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 52px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+}
+p {
+  margin: 0;
+}
+.t-0 {
+  font-size: 18px;
+  line-height: 30px;
+}
+.t-2 {
+  font-size: 15px;
+}
+.t-1 {
+  font-size: 14px;
 }
 
 @import 'margins.scss';

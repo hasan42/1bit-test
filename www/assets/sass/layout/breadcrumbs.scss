@@ -1,0 +1,29 @@
+.breadcrumbs {
+  a {
+    font-size: 13px;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-right: 40px;
+    &:after {
+      position: absolute;
+      content: '/';
+      top: 0;
+      right: 15px;
+    }
+    &:last-child {
+      color: #ee0286;
+      &:after {
+        padding-right: 0;
+        display: none;
+      }
+    }
+    &:visited {
+      color: #fff;
+      &:last-child {
+        color: #ee0286;
+      }
+    }
+  }
+}
