@@ -1,0 +1,62 @@
+/* Reset Styles */
+html, body {
+    //height: auto;
+    min-height: 100%;
+    margin: 0;
+    //padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    //background-color: $color-bg-basic;
+    //-webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased !important;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section,
+input, select, textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+a, a img {
+    border: 0;
+}
+article, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+input, select, textarea {
+    margin: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+//input[type=tel]::-webkit-contacts-auto-fill-button {
+//    visibility: hidden;
+//    display: none !important;
+//    pointer-events: none;
+//    position: absolute;
+//    right: 0;
+//}
+
+iframe {
+    border: 0;
+}
