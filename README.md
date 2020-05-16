@@ -1,6 +1,6 @@
 # Задача:
 
-##Сверстать  макет страницы   (скачать макет)[https://yadi.sk/d/Bjlx6LL9gjcRUQ]
+## Сверстать  макет страницы   (скачать макет)[https://yadi.sk/d/Bjlx6LL9gjcRUQ]
 
 ### требования:  
 - scss/sass - нужно  
@@ -17,7 +17,8 @@
 
 
 ## 2. Необходимо найти и устранить утечку памяти, объяснить природу утечки.
-`<script>  
+```html
+<script>  
 var theItem = null;  
 var replaceItem = function () {  
     var priorItem = theItem;  
@@ -34,7 +35,8 @@ var replaceItem = function () {
     };  
 };  
 setInterval(replaceItem, 1000);  
-</script>`
+</script>
+```
 
 ### Пояснения:  
 Шрифт можете взять из открытых источников в интернете либо заменить на Arial  
