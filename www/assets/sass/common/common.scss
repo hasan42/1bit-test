@@ -33,6 +33,21 @@ p {
   font-size: 14px;
 }
 
+.bg-white {
+  background-color: #ffffff;
+}
+
+.btn {
+  padding: 0px 10px;
+  background-color: #d10f8d;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
 @import 'margins.scss';
 @import 'paddings.scss';
 @import 'media.scss';

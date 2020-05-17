@@ -1,0 +1,76 @@
+.event {
+  color: #fff;
+}
+.event__description {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.event__place {
+  margin-top: 104px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 15px;
+}
+.event__date {
+  position: relative;
+  padding-left: 42px;
+  &:before {
+    content: url('/assets/images/calendar.png');
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+  }
+}
+.event__time {
+  position: relative;
+  padding-left: 33px;
+  &:before {
+    content: url('/assets/images/place.png');
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+  }
+}
+.event__name {
+  margin-top: 60px;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 500;
+}
+.event__actions {
+  margin-top: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+.event__price {
+  position: relative;
+  padding-left: 45px;
+  font-size: 32px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background-color: #d10f8d;
+  }
+}
+.event__sign {
+  flex-basis: 41%;
+  .btn {
+    display: inline-block;
+    width: 100%;
+  }
+  
+}
