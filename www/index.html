@@ -11,8 +11,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
-  <div class="wrap">
-    <header class="header">
+  <div class="wrap" >
+    <header class="header" id="start">
       <div class="wrapper">
         <div class="header__logo"><a href="/"><img src="/assets/images/logo.png"></a></div>
         <nav class="navigation">
@@ -236,7 +236,7 @@
           </div>
           <div class="reviews__list">
             <div class="reviews__item">
-              <div class="reviews__author">Генеральный директор “РЕЗОН-С” Куракин М.В.</div>
+              <div class="reviews__author">Генеральный директор “РЕЗОН-С”<br>Куракин М.В.</div>
               <div class="reviews__text">
                 <p>Компания РЕЗОН-С выражает благодарность специалистам технической поддержки! Услышали и помогли разобраться в вопросе нашей клиентки после неудачных попыток наших специалистов. Клиентка осталась довольна: "Побольше бы таких специалистов, которые действительно разбираются в том, что делают!".</p>
               </div>
@@ -256,15 +256,17 @@
       <div class="wrapper">
         <div class="footer__copyright">© 1997-2019 Компания “AБT”. Все права защищены.</div>
         <div class="footer__social">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+          <a href="#" class="social social_in"></a>
+          <a href="#" class="social social_od"></a>
+          <a href="#" class="social social_yt"></a>
+          <a href="#" class="social social_vk"></a>
+          <a href="#" class="social social_fb"></a>
         </div>
-        <div class="footer__politics">Политика конфиденциальности</div>
+        <div class="footer__politics">
+          <span>Политика конфиденциальности</span>
+        </div>
       </div>
-      <a class="go-up">Up</a>
+      <a class="go-up" href="#start"></a>
     </footer>
   </div>
   <script src="/assets/libs/jquery-3.5.1.min.js"></script>

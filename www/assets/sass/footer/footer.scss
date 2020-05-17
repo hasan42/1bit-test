@@ -1,5 +1,58 @@
 .footer {
-  padding: 12px 0 25px;
-  background-color: rgba(#B4CBDC, 0.2);
-  border-top: 2px solid rgba(#B4CBDC, 0.4);
+  position: relative;
+  padding: 34px 0 34px;
+  background-color: #29358c;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 33px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__copyright {
+  letter-spacing: 1px;
+}
+.footer__social {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-top: 7px;
+  .social {
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+}
+.footer__politics {
+  letter-spacing: 1px;
+  flex-basis: 27%;
+  text-align: right;
+  span {
+    position: relative;
+    padding-left: 41px;
+    &:after {
+      position: absolute;
+      content: '';
+      top: 7px;
+      left: 0px;
+      width: 22px;
+      height: 2px;
+      background-color: #bb148d;
+    }
+  }
+}
+.go-up {
+  position: absolute;
+  display: inline-block;
+  top: 31px;
+  right: 54px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d10f8d;
+  text-align: center;
+  &:after {
+    content: url('/assets/images/white-arrow.png');
+  }
 }

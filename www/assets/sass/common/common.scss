@@ -48,6 +48,29 @@ p {
   font-weight: 500;
 }
 
+.social {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social_in {
+  background-image: url('/assets/images/inst.png');
+}
+.social_od {
+  background-image: url('/assets/images/od.png');
+}
+.social_yt {
+  background-image: url('/assets/images/yt.png');
+}
+.social_vk {
+  background-image: url('/assets/images/vk.png');
+}
+.social_fb {
+  background-image: url('/assets/images/fb.png');
+}
+
 @import 'margins.scss';
 @import 'paddings.scss';
 @import 'media.scss';
