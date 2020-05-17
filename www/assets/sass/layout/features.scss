@@ -46,3 +46,32 @@
     }
   }
 }
+
+.features_tile {
+  .features__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .features__item {
+    flex-basis: 48%;
+    margin-bottom: 27px;
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      strong {
+        font-size: 23px;
+        line-height: 27px;
+        font-weight: bold;
+      }
+      &:not(:first-of-type){
+        margin-top: 19px;
+      }
+    }
+  }
+  .features__icon {
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-bottom: 20px;
+  }
+}
