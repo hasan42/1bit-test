@@ -1,0 +1,22 @@
+.subscribe {
+  color: #fff;
+  padding-top: 66px;
+  padding-bottom: 54px;
+  h2 {
+    margin: 0;
+  }
+  .form {
+    padding-top: 36px;
+  }
+  .form__item {
+    flex-basis: 32%;
+    &:last-child {
+      padding-left: 99px;
+      .btn {
+        width: 100%;
+        line-height: 42px;
+        margin-bottom: 14px;
+      }
+    }
+  }
+}

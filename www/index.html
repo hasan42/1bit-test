@@ -204,23 +204,25 @@
         </div>
       </div>
 
-      <div class="wrapper big-image" style="background-image: url('/assets/images/subs.jpg')">
-        <h2>Будьте в курсе последних новостей!</h2>
-        <div class="form subscribe">
-          <form>
-            <div class="form__item">
-              <input type="text" placeholder="Имя">
-            </div>
-            <div class="form__item">
-              <input type="text" placeholder="Email">
-            </div>
-            <div class="form__item">
-              <input class="btn" type="submit" value="Подписаться">
-              <span class="form__notice">
-                Я принимаю условия Оферты сайта и согласен с Политикой конфиденциальности.
-              </span>
-            </div>
-          </form>
+      <div class="big-image" style="background-image: url('/assets/images/subs.jpg')">
+        <div class="wrapper subscribe">
+          <h2>Будьте в курсе последних новостей!</h2>
+          <div>
+            <form class="form">
+              <div class="form__item">
+                <input type="text" placeholder="Имя" value="Имя">
+              </div>
+              <div class="form__item">
+                <input type="text" placeholder="Email">
+              </div>
+              <div class="form__item">
+                <input class="btn" type="submit" value="Подписаться">
+                <p class="form__notice">
+                  Я принимаю <a href="#">условия Оферты</a> сайта и согласен с <a href="#">Политикой конфиденциальности</a>.
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -228,7 +230,9 @@
         <div class="reviews">
           <div class="reviews__header">
             <h2>Отзывы о компании</h2>
-            <a href="#" class="btn">Оставить отзыв</a>
+            <div class="reviews__add">
+              <a href="#" class="btn">Оставить отзыв</a>
+            </div>
           </div>
           <div class="reviews__list">
             <div class="reviews__item">

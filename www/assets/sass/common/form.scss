@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.form__item {
+  input, button {
+    font-family: 'Montserrat', sans-serif;
+  }
+  input[type="text"] {
+    width: 100%;
+    outline: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 39px;
+    font-weight: 500;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(#fff, 0.45);
+  }
+  input[type="button"], input[type="submit"], button {
+    outline: 0;
+    border: 0;
+  }
+}
+.form__notice {
+  font-size: 10px;
+  line-height: 14px;
+  a {
+    text-decoration: none;
+    color: #d10f8d;
+    &:visited {
+      color: #d10f8d;
+    }
+  }
+}
