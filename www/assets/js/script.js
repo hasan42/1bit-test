@@ -4,7 +4,7 @@ $(document).ready(function () {
   var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     direction: 'vertical',
@@ -13,6 +13,9 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     }
   });
+
+  $(".slider").on('mouseover mouseenter', ()=>{swiper.autoplay.stop();});
+  $(".slider").on('mouseout mouseleave', ()=>{swiper.autoplay.start();});
 
   function validation(event){
 
