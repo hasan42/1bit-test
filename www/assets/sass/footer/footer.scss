@@ -10,6 +10,11 @@
     display: flex;
     justify-content: space-between;
   }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  }
 }
 .footer__copyright {
   letter-spacing: 1px;
@@ -23,6 +28,10 @@
     &:not(:last-child) {
       margin-right: 28px;
     }
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+    margin-top: 20px;
   }
 }
 .footer__politics {
@@ -42,6 +51,13 @@
       background-color: #bb148d;
     }
   }
+  @media screen and (max-width: 1199px) {
+    flex-basis: auto;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+    text-align: left;
+  }
 }
 .go-up {
   position: absolute;
@@ -55,4 +71,15 @@
   &:after {
     content: url('/assets/images/white-arrow.png');
   }
+  @media screen and (max-width: 1400px) {
+    position: static;
+    margin-right: 20px;
+    margin-top: 20px;
+    float: right;
+  }
+  @media screen and (max-width: 768px) {
+    float: none;
+    margin-left: 20px;
+  }
+
 }

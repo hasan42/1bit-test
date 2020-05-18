@@ -14,6 +14,10 @@
   justify-content: space-between;
   font-weight: bold;
   font-size: 15px;
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+    flex-direction: column;
+  }
 }
 .event__date {
   position: relative;
@@ -40,17 +44,31 @@
     top: -2px;
     left: 0;
   }
+  @media screen and (max-width: 768px) {
+    margin-top: 15px;
+    padding-left: 42px;
+    &:before {
+      left: 3px;
+    }
+  }
 }
 .event__name {
   margin-top: 60px;
   font-size: 30px;
   line-height: 41px;
   font-weight: 500;
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
 }
 .event__actions {
   margin-top: 58px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+    flex-direction: column;
+  }
 }
 .event__price {
   position: relative;
@@ -71,6 +89,9 @@
   .btn {
     display: inline-block;
     width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
   }
   
 }

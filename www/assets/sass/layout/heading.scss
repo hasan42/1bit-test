@@ -15,4 +15,19 @@
     padding-left: 3px;
     color: #fff;
   }
+  @media screen and (max-width: 960px) {
+    .features__list {
+      flex-direction: column;
+    }
+    .features__item {
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .features {
+      margin-top: 50px;
+    }
+  }
 }

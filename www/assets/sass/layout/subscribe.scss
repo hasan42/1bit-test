@@ -19,4 +19,14 @@
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .form__item {
+      &:not(:first-child){
+        margin-top: 20px;
+      }
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+  }
 }

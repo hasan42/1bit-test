@@ -13,12 +13,19 @@ h1 {
   font-size: 46px;
   line-height: 52px;
   font-weight: bold;
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+  }
 }
 h2 {
   font-size: 36px;
   line-height: 44px;
   font-weight: bold;
+  @media screen and (max-width: 768px) {
+    font-size: 26px;
+  }
 }
+a { color: inherit; } 
 p {
   margin: 0;
 }

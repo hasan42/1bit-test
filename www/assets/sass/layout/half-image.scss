@@ -5,15 +5,18 @@
     position: relative;
     z-index: 1;
   }
-  .half-image__bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 50%;
-    z-index: 0;
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: cover;
+}
+.half-image__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

@@ -1,12 +1,19 @@
 .reviews {
   padding-top: 55px;
   padding-bottom: 81px;
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .reviews__header {
   display: flex;
   justify-content: space-between;
   h2 {
     margin: 0;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 }
 .reviews__add {
@@ -16,16 +23,28 @@
     padding: 0 49px;
     line-height: 42px;
   }
+  @media screen and (max-width: 768px) {
+    margin-top: 14px;
+  }
 }
 .reviews__list {
   display: flex;
   justify-content: space-between;
   margin-top: 42px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .reviews__item {
   background-color: #fff;
   flex-basis: 49%;
   padding: 52px 49px 59px;
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+    &:not(:first-child){
+      margin-top: 20px;
+    }
+  }
 }
 .reviews__author {
   font-size: 17px;

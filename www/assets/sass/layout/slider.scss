@@ -5,8 +5,11 @@
     max-height: 333px;
   }
   .swiper-slide {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    img {
+      display: inline-block;
+    }
   }
   .swiper-button-next, .swiper-button-prev {
     outline: 0;
@@ -31,5 +34,25 @@
   }
   .swiper-button-prev {
     top: 0;
+  }
+  @media screen and (max-width: 1199px) {
+    .swiper-container {
+      max-height: auto;
+    }
+    .swiper-slide {
+      flex-basis: 32%;
+      img {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    .swiper-button-next {
+      top: -22px;
+      left: 50px;
+    }
+    .swiper-button-prev {
+      top: -22px;
+      left: 10px;
+    }
   }
 }

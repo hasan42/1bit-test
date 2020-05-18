@@ -2,9 +2,10 @@
   margin-top: 69px;
 }
 .learning__info {
-  padding-top: 39px;
+  padding-top: 69px;
   padding-bottom: 77px;
   h2 {
+    margin-top: 0;
     margin-bottom: 35px;
   }
   .features {
@@ -13,11 +14,43 @@
   .learn-more {
     margin-top: 48px;
   }
+  @media screen and (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 .learning__seminar {
   .event {
     padding-top: 80px;
     padding-left: 73px;
     margin-right: -5px;
+  }
+  @media screen and (max-width: 1199px) {
+    .event {
+      margin-right: 0px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      z-index: 0;
+      content: '';
+      background-image: url('/assets/images/half.jpg');
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .event {
+      position: relative;
+      z-index: 1;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 0px;
+    }
   }
 }

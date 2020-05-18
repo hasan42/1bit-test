@@ -10,3 +10,10 @@
   margin: 0 auto;
   max-width: 1160px;
 }
+
+@media screen and (max-width: 1199px) {
+  .wrapper {
+    margin: 0 20px;
+    max-width: auto;
+  }
+}
