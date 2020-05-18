@@ -21,6 +21,11 @@
   input[type="button"], input[type="submit"], button {
     outline: 0;
     border: 0;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
   }
 }
 .form__notice {
@@ -33,4 +38,18 @@
       color: #d10f8d;
     }
   }
+}
+
+.form-send {
+  display: none;
+
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.form-error {
+  font-size: 10px;
+  line-height: 14px;
+  color: #d10f8d;
 }

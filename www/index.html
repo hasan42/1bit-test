@@ -8,7 +8,6 @@
   <title>АБТ</title>
   <link rel="stylesheet" type="text/css" href="css/bundle.css" /> 
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
   <div class="wrap" >
@@ -209,20 +208,25 @@
         <div class="wrapper subscribe">
           <h2>Будьте в курсе последних новостей!</h2>
           <div>
-            <form class="form">
+            <form class="form" id="form">
               <div class="form__item">
-                <input type="text" placeholder="Имя" value="Имя">
+                <input id="name" type="text" placeholder="Имя">
+                <span class="form-error"></span>
               </div>
               <div class="form__item">
-                <input type="text" placeholder="Email">
+                <input id="email" type="text" placeholder="Email">
+                <span class="form-error"></span>
               </div>
               <div class="form__item">
-                <input class="btn" type="submit" value="Подписаться">
+                <button  id="submit" class="btn" type="submit" disabled>Подписаться</button>
                 <p class="form__notice">
                   Я принимаю <a href="#">условия Оферты</a> сайта и согласен с <a href="#">Политикой конфиденциальности</a>.
                 </p>
               </div>
             </form>
+          </div>
+          <div class="form-send">
+            <p>Вы подписались на новости!</p>
           </div>
         </div>
       </div>
@@ -272,7 +276,6 @@
   </div>
   <script src="/assets/libs/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="/assets/js/script.js"></script>
 </body>
 </html>
